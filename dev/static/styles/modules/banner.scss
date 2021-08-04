@@ -1,0 +1,88 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  @include min-screen(1200px + 1px) {
+    height: 358px;
+  }
+  @include screen(1200px) {
+    flex-direction: column;
+  }
+  &__img-tablet {
+    background-image: url('../img/common/image-hero-t.png');
+    height: 303px;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center center;
+    margin-bottom: 72px;
+    @include min-screen(1200px + 1px) {
+      display: none;
+    }
+    @include screen(768px) {
+      height: 153px;
+    }
+  }
+  &__img {
+    width: 400px;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    @include screen(1200px) {
+      display: none;
+    }
+    &-left {
+      background-image: url('../img/common/image-hero-left.png');
+      background-position: -40px 0;
+    }
+    &-right {
+      background-position: 40px 100%;
+      background-image: url('../img/common/image-hero-right.png');
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @include screen(768px) {
+      padding: 0 24px;
+    }
+    p {
+      margin-bottom: 32px;
+    }
+  }
+  &__buttons {
+    align-items: center;
+    display: flex;
+    @include screen(768px) {
+      flex-direction: column;
+    }
+    .btn {
+      &:not(:last-child) {
+        @include min-screen(768px + 1) {
+          margin-right: 16px;
+        }
+        @include screen(768px) {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+h1 {
+  color: #28283d;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  @include screen(1200px) {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  @include screen(1200px) {
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 24px;
+  }
+}

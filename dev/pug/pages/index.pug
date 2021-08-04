@@ -1,0 +1,37 @@
+extends ../layouts/main
+
+block variables
+  -var title = 'Главная страница'
+
+
+block content
+  section.s-banner
+    .banner
+      .banner__img-tablet
+      .banner__img.banner__img-left
+      .banner__content
+        h1 Group Chat<br>for Everyone
+        p Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+        .banner__buttons
+          .btn
+            span.btn__text Download
+            span.btn__subtext v1.3
+          .btn.btn--pink
+            span.btn__text What is it?
+      .banner__img.banner__img-right
+    .number
+      span 01
+  section.s-about
+    .container
+      .about
+        .photos
+          img(src="static/img/common/image-woman-in-videocall.jpg" alt="Фото")
+          img(src="static/img/common/image-women-videochatting.jpg" alt="Фото")
+          img(src="static/img/common/image-men-in-meeting.jpg" alt="Фото")
+          img(src="static/img/common/image-man-texting.jpg" alt="Фото")
+        .about__content
+          span.about__descr Built for modern use
+          h2 Smarter meetings, all in one place
+          p Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.
+    .number
+      span 02

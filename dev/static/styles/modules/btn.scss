@@ -1,0 +1,38 @@
+.btn {
+  height: 58px;
+  border-radius: 29px;
+  text-align: center;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4d96a9;
+  display: flex;
+  align-items: center;
+  transition: all linear .2s;
+  justify-content: center;
+  &:hover {
+    background-color: #71c0d4;
+  }
+  span {
+    &:not(:last-child) { margin-right: 4px; }
+  }
+  &__subtext {
+    color: #8fe3f9;
+  }
+  &.btn {
+    &--pink {
+      background-color: #855fb1;
+      .btn {
+        &__subtext {
+          color: #d9b8ff;
+        }
+      }
+      &:hover {
+        background-color: #b18bdd;
+      }
+    }
+  }
+}
